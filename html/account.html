@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace Dashboard</title>
+    <link rel="stylesheet" href="/css\style_account.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">W</div>
+            <div class="logo-text"><b>Workspace</b></div>
+        </div>
+        <div class="menu">
+            <div class="menu-item">
+                <a href="index.html" target="_parent" class="a-inactive"><div class="menu-text">🏠Home</div></a>
+            </div>
+            <div class="menu-item">
+                <a href="customers.html" target="_parent" class="a-inactive"><div class="menu-text">👥 Customers</div></a>
+            </div>
+            <div class="menu-item">
+                <a href="departments.html" target="_parent" class="a-inactive"><div class="menu-text">🏢 Departments</div></a>
+            </div>
+            <div class="menu-item">
+                <a href="media.html" target="_parent" class="a-inactive"><div class="menu-text">📁 Media</div></a>
+            </div>
+        </div>
+        <div class="account active">
+            <a href="account.html" target="_parent" class="a-active"><div class="account-text">👤 My Account</div></a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search in Home">
+            <button id="searchButton">🔍</button>
+        </div>
+        <div class="profile">
+            <div class="profile-picture">
+                <img src="https://via.placeholder.com/100" alt="Profile Picture">
+                <span class="edit-button" onclick="editProfilePicture()">✏️</span>
+            </div>
+            <div>
+                <label>Name</label>
+                <input type="text" value="John Doe" disabled>
+                <span class="edit-button" onclick="enableEdit(this)">✏️</span>
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" value="example@gmail.com" disabled>
+                <span class="edit-button" onclick="enableEdit(this)">✏️</span>
+            </div>
+            <div>
+                <label>Phone Number</label>
+                <input type="text" value="9134837948" disabled>
+                <span class="edit-button" onclick="enableEdit(this)">✏️</span>
+            </div>
+            <div>
+                <label>Date Of Birth</label>
+                <input type="date" value="1999-07-16" disabled>
+                <span class="edit-button" onclick="enableEdit(this)">✏️</span>
+            </div>
+            <div class="buttons">
+                <button class="save" onclick="saveChanges()">SAVE</button>
+                <button class="cancel" onclick="cancelChanges()">CANCEL</button>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript\script.js"></script>
+</body>
+</html>
